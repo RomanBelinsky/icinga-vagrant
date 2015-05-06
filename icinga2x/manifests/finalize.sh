@@ -10,4 +10,5 @@ cd nrpe-2.15/
 /home/vagrant/nrpe-2.15/configure
 make -C /home/vagrant/nrpe-2.15/
 make -C /home/vagrant/nrpe-2.15/ install	
+ln /usr/local/nagios/libexec/check_nrpe /usr/lib64/nagios/plugins/check_nrpe
 echo "The Icinga 2 Vagrant VM has finished installing. See http://localhost:8080 for more details."
