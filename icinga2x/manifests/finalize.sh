@@ -1,7 +1,12 @@
 #!/bin/bash
 sudo su
-yum install openssl-devel -y
+yum install openssl-devel freetds-devel python-devel libxml2-devel libxslt-devel -y
 yum install nano -y
+easy_install pip
+pip install psutil
+pip install nagiosplugin
+pip install dexml
+pip install pymssql
 chmod -R 0777 /etc/icinga2/conf.d/
 echo Installing NRPE
 wget http://liquidtelecom.dl.sourceforge.net/project/nagios/nrpe-2.x/nrpe-2.15/nrpe-2.15.tar.gz
