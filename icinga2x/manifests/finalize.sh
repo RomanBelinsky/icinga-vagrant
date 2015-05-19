@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo su
-yum install openssl-devel freetds-devel python-devel libxml2-devel libxslt-devel -y
+yum install openssl-devel freetds-devel python-devel libxml2-devel libxslt-devel cifs-utils -y
 yum install nano -y
 easy_install pip
 pip install psutil
